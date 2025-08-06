@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quiz.QuizViewController">
+   <children>
+      <Label fx:id="questionNumberLabel" text="প্রশ্ন 1/2" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      
+      <Label fx:id="questionLabel" text="প্রশ্নটি এখানে প্রদর্শিত হবে" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      
+      <VBox spacing="15.0">
+         <children>
+            <RadioButton fx:id="option1Radio" text="বিকল্প ১" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            
+            <RadioButton fx:id="option2Radio" text="বিকল্প ২" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            
+            <RadioButton fx:id="option3Radio" text="বিকল্প ৩" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            
+            <RadioButton fx:id="option4Radio" text="বিকল্প ৪" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      
+      <HBox alignment="CENTER">
+         <children>
+            <Button fx:id="nextButton" onAction="#handleNext" text="পরবর্তী">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>
